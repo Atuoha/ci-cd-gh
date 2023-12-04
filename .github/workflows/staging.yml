@@ -51,7 +51,7 @@ jobs:
     # ======================================================
     # Checkout the branch infra and the repository
     # ======================================================
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       name: 'Checkout repository and infra branch'
       with:
         ref: infra
@@ -182,7 +182,7 @@ jobs:
     # ======================================================
     # Checkout the PR branch so that we can deploy it
     # ======================================================
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       name: 'Checkout PR branch'
       with:
         ref: ${{ steps.verify_pr_number.outputs.result }}
